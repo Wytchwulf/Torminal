@@ -1,4 +1,4 @@
-# Docker-Tor
+# Torminal
 
 ## Overview
 
@@ -6,13 +6,26 @@ Just some simple config files for running a Tor relay using Docker and managing 
 
 This is as plug and play as I can make it.
 
-copy/paste below being sure to edit any data marked <<like-this>>
+Make sure to edit any data marked <<like-this>>
 
 Docker install docs [here](https://docs.docker.com/engine/install/)
 
 # Quick-Start
 
+```bash
+git clone https://github.com/Wytchwulf/Torminal/
+cd Torminal
+```
+Edit Torminal.sh with your name and email
 
+```bash
+chmod +x Torminal.sh
+```
+
+```bash
+./Torminal.sh
+```
+# Alt: Manual - Copy-Paste method.
 
 ## Dockerfile
 
@@ -46,6 +59,7 @@ Docker install docs [here](https://docs.docker.com/engine/install/)
   USER debian-tor
   
   CMD ["tor", "-f", "/etc/tor/torrc"]
+  ```
 
 ## torrc
 
@@ -65,18 +79,22 @@ Docker install docs [here](https://docs.docker.com/engine/install/)
   CookieAuthentication 1
   
   ContactInfo <<YOUR_NAME>> <<YOUR_EMAIL>>
+  ```
 
 ## Bring it all together
 
 - Build Image
   ```bash
   docker build -t tor-relay .
+  ```
 
 - Run Container
   ```bash
   docker run -d --name my-tor-relay -p 9001:9001 -p 9051:9051 -p 9050:9050 tor-relay
+  ```
 
 - Monitor Logs
   ```bash
   docker exec -it my-tor-relay nyx
+  ```
     
