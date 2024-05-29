@@ -3,6 +3,7 @@
 # Define your name and email here
 YOUR_NAME="<<YOUR_NAME>>"
 YOUR_EMAIL="<<YOUR_EMAIL>>"
+NICKNAME="<<RELAY_NICKNAME>>"
 
 # Create Dockerfile
 cat <<EOF > Dockerfile
@@ -39,6 +40,8 @@ EOF
 # Create torrc file
 cat <<EOF > torrc
 DataDirectory /var/lib/tor
+
+Nickname $RELAY_NICKNAME
 
 ORPort 9001
 ExitPolicy reject *:* # Reject all exit traffic
