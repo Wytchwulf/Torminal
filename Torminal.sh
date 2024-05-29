@@ -41,7 +41,7 @@ EOF
 cat <<EOF > torrc
 DataDirectory /var/lib/tor
 
-Nickname $RELAY_NICKNAME
+Nickname $NICKNAME
 
 ORPort 9001
 ExitPolicy reject *:* # Reject all exit traffic
