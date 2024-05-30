@@ -2,11 +2,11 @@
 
 ## Overview
 
-Just some simple config files for running a Tor relay using Docker and managing with Nyx. 
+This project aims to reduce friction in setting up a Tor relay using Docker and managing with Nyx. 
 
-This is as plug and play as I can make it.
+Make sure to edit any data marked "<<like-this>>"
 
-Make sure to edit any data marked <<like-this>>
+Don't Forget you will need to open port 9001 on your firewall
 
 Docker install docs [here](https://docs.docker.com/engine/install/)
 
