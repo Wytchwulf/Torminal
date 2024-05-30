@@ -16,7 +16,11 @@ Docker install docs [here](https://docs.docker.com/engine/install/)
 git clone https://github.com/Wytchwulf/Torminal/
 cd Torminal
 ```
+```python
+"""
 Edit Torminal.sh with your name and email
+"""
+```
 
 ```bash
 chmod +x Torminal.sh
