@@ -61,7 +61,7 @@ EOF
 docker build -t tor-relay .
 
 # Run Docker container
-docker run -d --name my-tor-relay -p 9001:9001 -p 9051:9051 -p 9050:9050 tor-relay
+docker run -d --name my-tor-relay -p 9001:9001 -p 9051:9051 -p 9050:9050 --restart always tor-relay
 
 # Monitor logs using nyx
 docker exec -it my-tor-relay nyx
