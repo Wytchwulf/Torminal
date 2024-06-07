@@ -20,11 +20,11 @@ cd Torminal
 ```
 ```bash
 chmod +x Torminal.sh
-chmod +x install_docker
+chmod +x install_docker.sh
 ```
 ```bash
 # If you do not currently have Docker:
-./installdocker.sh
+./install_docker.sh
 ```
 ```bash
 ./Torminal.sh
