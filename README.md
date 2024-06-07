@@ -29,4 +29,7 @@ chmod +x install_docker
 ```bash
 ./Torminal.sh
 ```
-    
+
+# Manual Installation
+
+[Manual Install](https://github.com/Wytchwulf/Torminal/blob/main/manual_install.md)
